@@ -1,0 +1,6 @@
+.vscode
+dags/__pycache__
+logs/
+plugins/
+section_6_slides/
+.pytest_cache/

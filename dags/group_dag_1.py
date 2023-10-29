@@ -11,7 +11,7 @@ from airflow.operators.subdag import SubDagOperator
 from datetime import datetime
 
 
-with DAG('group_dag', start_date=datetime(2023, 1, 1),
+with DAG('group_dag_SubDagOperator', start_date=datetime(2023, 1, 1),
          schedule_interval='@daily', catchup=False) as dag:
 
     #^ * 3. Create args of the parent dag

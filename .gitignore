@@ -4,3 +4,5 @@ logs/
 plugins/
 section_6_slides/
 .pytest_cache/
+dags/groups/__pycache__/
+dags/subdags/__pycache__/

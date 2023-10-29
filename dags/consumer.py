@@ -5,10 +5,11 @@ from datetime import datetime
 
 
 my_file = Dataset(uri="/tmp/my_file.txt")   # Need to use the same dataset as does the producer
+my_file_2 = Dataset(uri="/tmp/my_file_2.txt")   # Need to use the same dataset as does the producer
 
 with DAG(
     dag_id="consumer",
-    schedule=[my_file],     # my_file update (from producer) will trigger the consumer DAG
+    schedule=[my_file, my_file_2],     # my_file (and my_file_2) update (from producer) will trigger the consumer DAG
     start_date=datetime(2023, 1, 1),
     catchup=False
 ):

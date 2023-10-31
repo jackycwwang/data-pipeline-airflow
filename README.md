@@ -13,14 +13,13 @@ In this project, The following pipelines are implemented:
 
     ![user_processing](images/user_processing.png)
 
-  - **parallel_dag**: The DAG that demonstrates two parallel pipelines operate concurrently
+  - **parallel_dag**: The DAG that demonstrates two parallel pipelines operate concurrently and specifies a task to be executed in a `high_cpu` queue that is associated with a particular Airflow worker - `airflow-workder-2`.
 
     ![parallel_dag](images/parallel_dag.png)
 
-  - **producer and consumer**: A pipeline that demonstrates using a `Dataset` as consumer's trigger schedule
+  - **producer and consumer**: A pipeline that demonstrates using `Dataset`. Consumer will be triggered after the datasets are updated by Producer.
 
     - Producer DAG:
-
 
         ![producer](images/producer.png)
 
@@ -28,7 +27,7 @@ In this project, The following pipelines are implemented:
 
         ![consumer](images/consumer.png)
 
-  - **group_dag**: A pipeline that demonstrates using `SubDagOperator` or new `TaskGroup` for grouping similar tasks together to ease dag management.
+  - **group_dag**: A pipeline that demonstrates using `SubDagOperator` or new `TaskGroup` for grouping similar tasks together to ease dag management. The sub dags/groups are located in the `groups/subdags` and `groups/groups` directory respectively.
 
     - Group Tasks with `SubDagOperator`:
 
@@ -38,11 +37,11 @@ In this project, The following pipelines are implemented:
 
         ![group_dag_taskgroup](images/group_dag_taskgroup.png)
 
-  - **xcom_dag**: A pipeline that demonstrates using `XCom` to exchange data between different tasks and the branch operator to enable conditional path selection.
+  - **xcom_dag**: A pipeline that demonstrates using `XCom` to exchange data between different tasks and a branch operator to enable conditional path selection. In addition, t4 is triggered with a different trigger rule.
 
     ![xcom_dag](images/xcom_dag.png)
 
-  - **elastic_dag**: A pipeline that demonstrates using a custom plugin to communicate with elasticsearch server.
+  - **elastic_dag**: A pipeline that demonstrates using a custom plugin, located in `plugins` directory, to communicate with elasticsearch server.
 
     ![elastic_dag](images/elastic_dag.png)
 

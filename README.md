@@ -20,18 +20,22 @@ In this project, The following pipelines are implemented:
   - **producer and consumer**: A pipeline that demonstrates using a `Dataset` as consumer's trigger schedule
 
     - Producer DAG:
-![producer](images/producer.png)
+
+    ![producer](images/producer.png)
 
     - Consumer DAG:
-![consumer](images/consumer.png)
+
+    ![consumer](images/consumer.png)
 
   - **group_dag**: A pipeline that demonstrates using `SubDagOperator` or new `TaskGroup` for grouping similar tasks together to ease dag management.
 
     - Group Tasks with `SubDagOperator`:
-![group_dag_subdagoperator](images/group_dag_subdagoperator.png)
+
+    ![group_dag_subdagoperator](images/group_dag_subdagoperator.png)
 
     - Group Tasks with `TaskGroup`:
-![group_dag_taskgroup](images/group_dag_taskgroup.png)
+
+    ![group_dag_taskgroup](images/group_dag_taskgroup.png)
 
   - **xcom_dag**: A pipeline that demonstrates using `XCom` to exchange data between different tasks and the branch operator to enable conditional path selection.
 
@@ -44,7 +48,7 @@ In this project, The following pipelines are implemented:
 
 For DAGs other than `elastic_dag`:
 
-1. Spin up docker-compose by running at the root of the project directory:
+1. Spin up docker-compose at the root of the project directory:
 
     ``` bash
     $<project_directory> docker-compose up -d

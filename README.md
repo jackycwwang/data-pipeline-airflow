@@ -63,7 +63,7 @@ For DAGs other than `elastic_dag`:
     $<project_directory> docker-compose -f docker-compose-es.yaml up -d
     ```
 
-    Use the following command  in order to see Flower dashboard:
+    Use the following command  in order to see Flower dashboard (If you would like to get information about Airflow workers):
 
     ```bash
     docker-compose down && docker-compose --profile flower up -d

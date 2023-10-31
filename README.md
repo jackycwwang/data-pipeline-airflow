@@ -37,7 +37,7 @@ In this project, The following pipelines are implemented:
 
         ![group_dag_taskgroup](images/group_dag_taskgroup.png)
 
-  - **xcom_dag**: A pipeline that demonstrates using `XCom` to exchange data between different tasks and a branch operator to enable conditional path selection. In addition, t4 is triggered with a different trigger rule.
+  - **xcom_dag**: A pipeline that demonstrates using `XCom` to exchange data between different tasks and a branch operator to enable conditional path selection. In addition, `t4` is triggered with a different trigger rule.
 
     ![xcom_dag](images/xcom_dag.png)
 
@@ -64,6 +64,8 @@ For DAGs other than `elastic_dag`:
     ```
 
 2. Create connections as follows:
-![airflow_connections](images/connections.png)
 
-3. Ready to trigger the pipeline
+    ![airflow_connections](images/connections.png)
+
+
+1. Ready to trigger the pipeline

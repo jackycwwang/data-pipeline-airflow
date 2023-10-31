@@ -63,9 +63,17 @@ For DAGs other than `elastic_dag`:
     $<project_directory> docker-compose -f docker-compose-es.yaml up -d
     ```
 
+    Use the following command  in order to see Flower dashboard:
+
+    ```bash
+    docker-compose down && docker-compose --profile flower up -d
+    ```
+
 2. Create connections as follows:
 
     ![airflow_connections](images/connections.png)
 
 
-1. Ready to trigger the pipeline
+3. Ready to trigger the pipeline
+    - use `localhost:8080` to open Airflow dashboard
+    - use `localhost:5555` to open Flower dashboard if applicable

@@ -1,8 +1,9 @@
 .vscode
 dags/__pycache__
 logs/
-plugins/
+plugins/__pycache__/
 section_6_slides/
 .pytest_cache/
 dags/groups/__pycache__/
 dags/subdags/__pycache__/
+plugins/hooks/elastic/__pycache__/
